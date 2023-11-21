@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="co.edu.uniquindio.agencia.controller.ControladorPantallaRegistro"
+      alignment="CENTER" spacing="20">
+
+    <Label text="Registro de Usuario" />
+
+    <TextField fx:id="txtNombre" promptText="Nombre" />
+    <TextField fx:id="txtApellido" promptText="Apellido" />
+    <TextField fx:id="txtCorreo" promptText="Correo Electrónico" />
+    <PasswordField fx:id="txtContraseña" promptText="Contraseña" />
+    <TextField fx:id="txtTelefono" promptText="Número de Teléfono" />
+    <TextField fx:id="txtDireccion" promptText="Dirección" />
+
+    <Button text="Registrar" onAction="#handleRegistroButton"/>
+</VBox>

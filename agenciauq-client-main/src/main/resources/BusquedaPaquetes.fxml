@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controller.BusquedaPaquetesController">
+   <top>
+      <!-- Barra superior con título -->
+      <HBox alignment="CENTER" style="-fx-background-color: #336699;">
+         <Text fill="WHITE" text="Búsqueda de Paquetes"/>
+      </HBox>
+   </top>
+
+   <center>
+      <!-- Contenido principal -->
+      <Label text="Filtrar por:"/>
+      <TextField fx:id="filtroTextField" promptText="Nombre, ciudad, precio, etc."/>
+      <Button text="Buscar" onAction="#buscarPaquetes"/>
+      <ListView fx:id="resultadosListView" prefWidth="300" prefHeight="200"/>
+   </center>
+
+   <bottom>
+      <!-- Botón para cerrar la ventana -->
+      <HBox alignment="CENTER_RIGHT" style="-fx-background-color: #336699;">
+         <Button text="Cerrar" onAction="#cerrarVentana"/>
+      </HBox>
+   </bottom>
+</BorderPane>

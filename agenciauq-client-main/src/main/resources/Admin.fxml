@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controller.AdminController">
+    <top>
+
+        <HBox alignment="CENTER" style="-fx-background-color: #336699;">
+            <Text fill="WHITE" text="Panel de Administrador"/>
+        </HBox>
+    </top>
+
+    <center>
+
+        <Label text="Gestión de Datos:"/>
+        <Button text="Gestionar Destinos" onAction="#gestionarDestinos"/>
+        <Button text="Gestionar Paquetes" onAction="#gestionarPaquetes"/>
+        <Button text="Gestionar Guías" onAction="#gestionarGuias"/>
+        <Button text="Ver Estadísticas" onAction="#verEstadisticas"/>
+
+    </center>
+
+    <bottom>
+
+        <HBox alignment="CENTER_RIGHT" style="-fx-background-color: #336699;">
+            <Button text="Cerrar Sesión" onAction="#cerrarSesion"/>
+        </HBox>
+    </bottom>
+</BorderPane>

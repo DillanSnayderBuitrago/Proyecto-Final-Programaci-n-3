@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controller.ClientePrincipalController">
+    <top>
+        <!-- Barra superior con título -->
+        <HBox alignment="CENTER" style="-fx-background-color: #336699;">
+            <Text fill="WHITE" text="Bienvenido, [Nombre del Cliente]"/>
+        </HBox>
+    </top>
+
+    <center>
+        <!-- Contenido principal -->
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Buscar Paquetes" onAction="#buscarPaquetes"/>
+            <Button text="Ver Reservas" onAction="#verReservas"/>
+            <!-- Agrega más botones según las funcionalidades -->
+        </HBox>
+    </center>
+
+    <bottom>
+
+        <HBox alignment="CENTER" style="-fx-background-color: #336699;">
+            <Text fill="WHITE" text="Opciones adicionales "/>
+        </HBox>
+    </bottom>
+</BorderPane>

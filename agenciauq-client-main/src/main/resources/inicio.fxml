@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="co.edu.uniquindio.agencia.controller.ControladorPantallaInicio"
+      alignment="CENTER" spacing="20">
+
+   <Button text="Iniciar Sesión" onAction="#handleLoginButton"/>
+   <Button text="Registro" onAction="#handleRegistroButton"/>
+
+</VBox>
